@@ -1,0 +1,43 @@
+.Follower{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    border-radius: 10px;
+    padding-left:12.5px;
+    padding-right:12.5px;
+
+
+    &.hovered {
+        background-color: #bebebe;
+        // cursor: pointer;
+    }
+
+
+
+    .user-info{
+        display: flex;
+        align-items: center;
+        gap:20px;
+        cursor: pointer;
+    }
+
+    // .background:hover{
+    //     background-color: #8b0f0f;
+    //   }
+    .name{
+        font-size: 16px;
+        // font-weight: bold;
+    }
+    
+
+    .unfollow-link{
+        // color: var(--accent-color);
+        color: rgb(187, 1, 1);
+    }
+
+    .followlink{
+        color: var(--accent-color);
+        cursor: pointer;
+    }
+}

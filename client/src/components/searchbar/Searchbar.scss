@@ -1,0 +1,71 @@
+.searchbar {
+    position: relative;
+    .search-button {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+    }
+    form {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        input {
+            padding: 8px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            flex-grow: 1;
+            margin-right: 10px;
+            margin-bottom: 12px;
+            background-color: #f0f0f0;
+            width: 250px;
+        }
+    }
+    .search-button{
+        font-size: 2.25rem;
+        // color: #f0f0f0; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &:active {
+            transform: scale(0.8); // Apply scaling effect when button is clicked
+            // transition: 0.3s ease; // Add a smooth transition effect
+        }
+    }
+
+
+    .search-results {
+        position: absolute;
+        top: 100%; /* This will place the results just below the input field */
+        left: 0;
+        right: 0;
+        background-color: #f0f0f0;;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        z-index: 10; /* Ensure it appears above other content */
+        max-height: 200px; /* Adjust height as needed */
+        overflow-y: auto;
+
+        .search-result-item {
+            padding: 0.5rem;
+            display: flex;
+            align-items: center;
+
+            &:hover {
+                background-color: #cfcfcf;
+                cursor: pointer;
+            }
+
+            .avatar {
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                margin-right: 0.7rem;
+                object-fit: cover;
+            }
+            // .user-name {
+            //     font-weight: bold;
+            // }
+        }
+    }
+}

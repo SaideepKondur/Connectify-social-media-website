@@ -1,0 +1,90 @@
+.Profile{
+    margin-top: 60px;
+    background: #f0f0f0;
+    .container{
+        display: flex;
+        gap: 20px;
+    }
+    .left-part{
+        flex: 2;
+        overflow-y: auto;
+
+
+    }
+    .right-part {
+        flex: 1;
+        margin-top: 20px;
+    }
+
+    .no-posts {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 25px;
+        color: #999999;
+        p{
+            font-size: 30px;
+        }
+        text-align: center;
+    
+        svg {
+            margin-bottom: 10px;
+        }
+    }
+
+
+
+    .profile-card{
+        border: 1px solid var(--border-color);
+        border-radius: 20px;
+        text-align: center;
+        padding: 40px;
+        background-color: rgb(251, 251, 251);
+
+        .user-img{
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .user-name{
+            margin-top: 12px;
+            font-weight: bold;
+        }
+
+        .bio{
+            margin-top: 6px;
+        }
+
+        .follower-info{
+            font-size: 15px;
+            margin-top: 12px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+        }
+        .follow, .update-profile{
+            margin-top: 20px; 
+            display: inline-block;
+        }
+        .follow-link{
+                background-color: rgb(219, 2, 2);
+                /* background: linear-gradient(to right, #230144, #bb4bca); */
+                color: white;
+                font-weight: bold;
+                padding: 10px 40px;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+        }
+
+        .follow-link:hover{
+            background-color: rgb(187, 1, 1);
+        }
+        
+    }
+
+}

@@ -1,0 +1,56 @@
+.Navbar{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background: linear-gradient(to right, #230144, #bb4bca);
+    // background-color: white;
+    // background-color: #bb4bca;
+
+    height: 60px;
+    border-bottom: 1px solid gray;
+
+
+
+    .container{
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .banner{
+        font-family: "Caveat Brush", cursive;
+        font-size: 30px;
+        color: white;
+    }
+
+    .hover-link:active { 
+        transform: scale(0.9); 
+    } 
+
+    .searchbar {
+        display: flex;
+        align-items: center; /* Center vertically */
+        
+        input {
+            border: 1px solid black;
+            border-radius: 4px;
+            margin-top: 15px;
+        }
+
+    }
+
+    .right-side{
+        display: flex;
+        gap:35px;
+        align-items: center;
+
+        .logout{
+            font-size: 2.25rem;
+            // color: #f0f0f0; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
