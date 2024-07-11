@@ -11,11 +11,6 @@ const cors = require('cors');
 const cloudinary = require('cloudinary').v2;
 dotenv.config('./.env');
 
-
-
-
-
-
 // Configuration
 cloudinary.config({  
     cloud_name: process.env.CLOUDINARY_CLOUD_NAME,
@@ -23,15 +18,10 @@ cloudinary.config({
     api_secret: process.env.CLOUDINARY_API_SECRET,
 });
 
-
 const app = express();
-
 
 // Increase image payload size limit to 10MB
 // app.use(express.urlencoded({ limit: '10mb', extended: true }));  
-
-
-
 
 //middlewares
 app.use(express.json({ limit: '10mb' }));
