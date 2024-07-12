@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import './Signup.scss';
 import loginLeft from "../../assets/loginLeft.jpg";
 import { useDispatch } from 'react-redux';
-import { showToast, TOAST_SUCCESS } from '../../slices/appConfigSlice';
+import { showToast, TOAST_SUCCESS } from '../../redux/slices/appConfigSlice';
 
 
 function Signup() {
