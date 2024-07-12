@@ -3,17 +3,22 @@ import { axiosClient } from '../../utils/axiosClient';
 import { Link } from 'react-router-dom';
 import './Signup.scss';
 import loginLeft from "../../assets/loginLeft.jpg";
+import { useDispatch } from 'react-redux';
+import { showToast, TOAST_SUCCESS } from '../../slices/appConfigSlice';
+
 
 function Signup() {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+    const dispatch = useDispatch();
 
     async function handleSubmit(e) {
         e.preventDefault();
         try {
             const result = await axiosClient.post('/auth/signup', { name, email, password });
             console.log(result);
+            dispatch(showToast({ type: TOAST_SUCCESS, message: "Success! You've joined Connectify." }));
         } catch (error) {
             console.log(error);
         }   
